@@ -19,8 +19,8 @@ class VerificationManager
     public static function withHeaders(string $appId, string $apiKey)
     {
         static::$headers = [
-            "app-id: $appId",
-            "api-key: $apiKey"
+            "app-id" => $appId,
+            "api-key" => $apiKey
         ];
 
         return new static;
